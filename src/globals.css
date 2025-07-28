@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+@theme {
+  --color-primary: #004030;
+  --color-content: #FFF9E5;
+  --color-accent: #DCD0A8;
+  --color-interactive: #4A9782;
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui;
+}
+
+body {
+  background-color: var(--color-primary);
+  color: var(--color-content);
+  font-family: var(--font-sans);
+  min-height: 100vh;
+}
+
+/* Glassmorphism utility */
+.glass {
+  background-color: rgb(255 255 255 / 0.05);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgb(220 208 168 / 0.5);
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+  border-radius: 0.75rem;
+}
+
+/* Cursor tracker styles are handled in the component */ 
