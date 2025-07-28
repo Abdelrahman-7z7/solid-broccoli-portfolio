@@ -10,8 +10,7 @@ import {
   Shield,
   Database,
   Globe,
-  Smartphone,
-  Cpu
+  Smartphone
 } from "lucide-react";
 
 interface ServiceCardProps {
@@ -159,7 +158,7 @@ export default function Services() {
             whileTap={{ scale: 0.95 }}
           >
             <Smartphone className="w-5 h-5" />
-            Let's Build Something Amazing
+            Let&apos;s Build Something Amazing
           </motion.a>
         </motion.div>
       </div>

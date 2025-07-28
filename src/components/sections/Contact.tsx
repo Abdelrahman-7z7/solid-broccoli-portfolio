@@ -224,7 +224,7 @@ export default function Contact() {
     }
 
     if (!formData.isHuman) {
-      newErrors.isHuman = "Please confirm you're human";
+      newErrors.isHuman = "Please confirm you&apos;re human";
     }
 
     setErrors(newErrors);
@@ -274,7 +274,7 @@ export default function Contact() {
               Message Sent Successfully!
             </h2>
             <p className="text-[#FFF9E5]/80 text-lg">
-              Thank you for reaching out. I'll get back to you soon!
+              Thank you for reaching out. I&apos;ll get back to you soon!
             </p>
           </motion.div>
         </div>
@@ -294,11 +294,11 @@ export default function Contact() {
           viewport={{ once: true }}
         >
           <h2 className="text-3xl md:text-4xl font-bold text-[#FFF9E5] mb-6">
-            Let's build something{" "}
+            Let&apos;s build something{" "}
             <span className="text-[#4A9782]">amazing</span> together!
           </h2>
           <p className="text-[#FFF9E5]/90 text-lg md:text-xl max-w-3xl mx-auto leading-relaxed">
-            Ready to bring your ideas to life? Let's connect and create something extraordinary.
+            Ready to bring your ideas to life? Let&apos;s connect and create something extraordinary.
           </p>
         </motion.div>
 
@@ -359,7 +359,7 @@ export default function Contact() {
                     className="w-5 h-5 text-[#4A9782] bg-white/5 border-[#DCD0A8]/20 rounded focus:ring-[#4A9782] focus:ring-2"
                   />
                   <span className="text-[#FFF9E5] text-sm">
-                    🛡️ I'm human – not a robot developer 🤖
+                    🛡️ I&apos;m human – not a robot developer 🤖
                   </span>
                 </label>
                 {errors.isHuman && (
@@ -411,7 +411,7 @@ export default function Contact() {
             <div className="bg-white/5 backdrop-blur-md rounded-2xl p-8 border border-[#DCD0A8]/20">
               <h3 className="text-2xl font-bold text-[#FFF9E5] mb-6">Connect With Me</h3>
               <p className="text-[#FFF9E5]/80 mb-8">
-                Let's stay connected! Follow me on social media or reach out directly.
+                Let&apos;s stay connected! Follow me on social media or reach out directly.
               </p>
               
               <div className="grid grid-cols-2 gap-4">

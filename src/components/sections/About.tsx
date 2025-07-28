@@ -39,7 +39,7 @@ export default function About() {
                     <Code className="w-4 h-4 text-[#4A9782]" />
                   </div>
                   <p className="text-[#FFF9E5] leading-relaxed">
-                    Hi! I'm <span className="text-[#4A9782] font-semibold">Abdelrahman</span>, a passionate backend engineer and fullstack developer based in Istanbul. I love building robust, scalable systems and crafting delightful user experiences.
+                    Hi! I&apos;m <span className="text-[#4A9782] font-semibold">Abdelrahman</span>, a passionate backend engineer and fullstack developer based in Istanbul. I love building robust, scalable systems and crafting delightful user experiences.
                   </p>
                 </div>
               </motion.div>

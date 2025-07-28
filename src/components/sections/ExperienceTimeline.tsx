@@ -50,7 +50,7 @@ const timelineData = [
 
 const ExperienceTimeline = () => {
     const [currentGroup, setCurrentGroup] = useState(0);
-    const [hoveredCard, setHoveredCard] = useState<number | null>(null);
+
     const groups = Math.ceil(timelineData.length / 3);
     const currentItems = timelineData.slice(currentGroup * 3, (currentGroup + 1) * 3);
   
@@ -115,8 +115,7 @@ const ExperienceTimeline = () => {
                   ease: "easeInOut" 
                 } 
               }}
-              onMouseEnter={() => setHoveredCard(index)}
-              onMouseLeave={() => setHoveredCard(null)}
+
             >
                 <div className="flex flex-col space-y-4 h-full">
                   {/* Icon Container */}

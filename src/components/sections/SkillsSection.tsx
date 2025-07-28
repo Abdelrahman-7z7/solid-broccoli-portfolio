@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Code, Database, GitBranch, Globe, Layers, Cloud } from "lucide-react";
-import { isValidElement } from "react";
+
 
 const skillsData: {
   title: string;
