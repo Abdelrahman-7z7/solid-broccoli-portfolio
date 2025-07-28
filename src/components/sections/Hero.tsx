@@ -14,25 +14,25 @@ const socialLinks = [
   {
     name: "GitHub",
     icon: Github,
-    href: "https://github.com/yourusername",
+    href: "https://github.com/Abdelrahman-7z7/",
     color: "hover:text-[#4A9782]"
   },
   {
     name: "LinkedIn",
     icon: Linkedin,
-    href: "https://linkedin.com/in/yourusername",
+    href: "https://www.linkedin.com/in/abdelrahman-elorabi-2a726a216/",
     color: "hover:text-[#4A9782]"
   },
   {
     name: "Instagram",
     icon: Instagram,
-    href: "https://instagram.com/yourusername",
+    href: "https://www.instagram.com/abdelrahman_7zz?igsh=MW1rNzJid3BwYTFlag%3D%3D&utm_source=qr",
     color: "hover:text-[#4A9782]"
   },
   {
     name: "WhatsApp",
     icon: MessageCircle,
-    href: "https://wa.me/yournumber",
+    href: "https://wa.me/237612345678",
     color: "hover:text-[#4A9782]"
   }
 ];
