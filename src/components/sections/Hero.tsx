@@ -135,20 +135,22 @@ export default function Hero() {
               transition={{ duration: 0.8, delay: 1 }}
               className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
             >
-              <motion.button
+              <motion.a
+                href= "#projects"
                 onClick={handleViewProjects}
-                className="px-8 py-4 bg-[#4A9782] hover:bg-[#4A9782]/80 text-[#FFF9E5] font-semibold rounded-xl transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl"
+                className="px-8 py-4 bg-[#4A9782] hover:bg-[#4A9782]/80 text-[#FFF9E5] font-semibold rounded-xl transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl cursor-pointer"
                 whileHover={{ y: -5 }}
               >
                 View Projects
-              </motion.button>
-              <motion.button
+              </motion.a>
+              <motion.a
+                href= "#contact"
                 onClick={handleGetInTouch}
-                className="px-8 py-4 border-2 border-[#4A9782] text-[#4A9782] hover:bg-[#4A9782] hover:text-[#FFF9E5] font-semibold rounded-xl transition-all duration-300 hover:scale-105"
+                className="px-8 py-4 border-2 border-[#4A9782] text-[#4A9782] hover:bg-[#4A9782] hover:text-[#FFF9E5] font-semibold rounded-xl transition-all duration-300 hover:scale-105 cursor-pointer"
                 whileHover={{ y: -5 }}
               >
                 Get In Touch
-              </motion.button>
+              </motion.a>
             </motion.div>
 
             {/* Social Media Icons */}
