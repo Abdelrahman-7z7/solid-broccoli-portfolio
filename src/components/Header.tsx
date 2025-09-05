@@ -28,7 +28,6 @@ export default function Header() {
       // --- NEW: Logic for active link highlighting ---
       let currentSection = "";
       NAV_LINKS.forEach(link => {
-        // We get the ID from the href (e.g., "/#home" -> "home")
         const sectionId = link.href.split('#')[1];
         const section = document.getElementById(sectionId);
         if (section && section.offsetTop <= window.scrollY + 150) {
@@ -50,16 +49,14 @@ export default function Header() {
     setIsDropdownOpen(false);
   };
 
-
   // Helper component for nav links to avoid repetition
   const NavLink = ({ href, label }: { href: string, label: string }) => (
     <a
       href={href}
-      // --- NEW: Conditional class for active state ---
       className={`transition-colors duration-200 font-medium ${
         activeSection === href 
-          ? 'text-[#4A9782]' // Active color
-          : 'text-[#FFF9E5] hover:text-[#4A9782]' // Default color
+          ? 'text-[#4A9782]' 
+          : 'text-[#FFF9E5] hover:text-[#4A9782]'
       }`}
       onClick={closeAllMenus}
     >
@@ -92,14 +89,22 @@ export default function Header() {
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               className="p-2 text-[#FFF9E5] hover:text-[#4A9782] hover:bg-white/5 rounded-lg transition-all"
             >
-              {/* SVG Icon */}
+              {/* Hamburger Icon */}
+              <svg xmlns="http://www.w3.org/2000/svg" 
+                className="h-6 w-6" 
+                fill="none" 
+                viewBox="0 0 24 24" 
+                stroke="currentColor" 
+                strokeWidth={2}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
             </button>
           </div>
           {isMobileMenuOpen && (
-            <div className="mt-6 pt-4 border-t border-[#DCD0A8]/20">
-              <ul className="space-y-3">
+            <div className="mt-4 pt-4 border-t border-[#DCD0A8]/20">
+              <ul className="flex flex-col items-center gap-4 px-4">
                 {NAV_LINKS.map((link) => (
-                  <li key={link.href} className="text-center">
+                  <li key={link.href}>
                     <NavLink href={link.href} label={link.label} />
                   </li>
                 ))}
@@ -117,11 +122,19 @@ export default function Header() {
               onClick={() => setIsDropdownOpen(!isDropdownOpen)}
               className="w-14 h-14 bg-white/10 backdrop-blur-md shadow-2xl rounded-full flex items-center justify-center text-[#FFF9E5] hover:text-[#4A9782] transition-all hover:scale-110"
             >
-              {/* SVG Icon */}
+              {/* Hamburger Icon */}
+              <svg xmlns="http://www.w3.org/2000/svg" 
+                className="h-7 w-7" 
+                fill="none" 
+                viewBox="0 0 24 24" 
+                stroke="currentColor" 
+                strokeWidth={2}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
             </button>
             {isDropdownOpen && (
               <div className="absolute top-16 right-0 min-w-56 bg-white/10 backdrop-blur-md shadow-2xl rounded-2xl border border-[#DCD0A8]/20 overflow-hidden">
-                <ul className="py-4 space-y-2">
+                <ul className="flex flex-col gap-4 px-6 py-4">
                   {NAV_LINKS.map((link) => (
                     <li key={link.href}><NavLink href={link.href} label={link.label} /></li>
                   ))}
