@@ -126,6 +126,60 @@ const allProjects: ProjectDetail[] = [
       challenges: "Developing a fluid interactive canvas on React Native required extensive optimization. Integration with AWS S3 was crucial for handling a large volume of user-generated content.",
       impact: "Kashida has fostered a growing community, making traditional art forms accessible to a wider audience globally. It empowers artists to share their passion and learn from peers.",
     },
+    {
+        name: "Water Supplier Delivery",
+        status: "Live",
+        tagline: "Real-time delivery system with payment processing",
+        stack: ["Node.js", "Supabase", "Stripe", "Redis"],
+        featured: true,
+        links: [
+          { type: "github", url: "https://github.com/yourproject/water-supplier" },
+          { type: "live", url: "https://watersupplier.example.com" }
+        ],
+        caseStudy: "water-supplier-delivery",
+        about: "Water Supplier Delivery is a logistics platform for water companies, offering customers a digital way to order, track, and manage water deliveries with ease.",
+        keyFeatures: [
+          { title: "Smart Ordering", description: "Place one-time or recurring water orders instantly." },
+          { title: "Real-time Tracking", description: "Track delivery trucks with live updates from drivers." },
+          { title: "Payment Gateway", description: "Secure, seamless payments via Stripe integration." },
+          { title: "Driver Application", description: "Delivery staff access optimized routes and delivery status updates." },
+          { title: "High-performance Infrastructure", description: "Redis caching ensures fast performance under heavy load." },
+        ],
+        challenges: "Handling concurrent orders with low latency was tough. Redis was used to optimize caching, while Supabase real-time API ensured order status updates were instantaneous.",
+        impact: "This project transformed local water delivery businesses, improving efficiency and customer satisfaction while enabling digital-first service models.",
+        images: [
+          "/images/projects/water-supplier-1.jpg",
+          "/images/projects/water-supplier-2.jpg",
+          "/images/projects/water-supplier-3.jpg"
+        ]
+      },
+      {
+        name: "Iktifa Charity Platform",
+        status: "Live",
+        tagline: "Charity e-commerce for livestock and food packages",
+        stack: ["Next.js", "Node.js", "Supabase", "iyzico"],
+        featured: false,
+        links: [
+          { type: "github", url: "https://github.com/yourproject/iktifa" },
+          { type: "live", url: "https://iktifa.example.com" }
+        ],
+        caseStudy: "iktifa-charity-platform",
+        about: "Iktifa is a charity-focused platform designed to make donations more transparent and impactful. It allows users to directly purchase livestock or food packages for families in need.",
+        keyFeatures: [
+          { title: "Donation Marketplace", description: "Browse, select, and sponsor food or livestock packages." },
+          { title: "Trusted Payment Gateway", description: "Integrated with iyzico for secure local and international donations." },
+          { title: "Order Transparency", description: "Donors can track the entire process from donation to delivery." },
+          { title: "NGO Dashboard", description: "Charity organizations manage donations, beneficiaries, and logistics." },
+          { title: "Impact Reports", description: "Automatically generated reports for donors to build trust." },
+        ],
+        challenges: "Maintaining donor trust required bulletproof security and transparency. We implemented detailed audit trails and receipts while ensuring smooth iyzico integration.",
+        impact: "Iktifa empowered NGOs to streamline donation management, helped increase donor confidence, and delivered aid more efficiently to those in need.",
+        images: [
+          "/images/projects/iktifa-1.jpg",
+          "/images/projects/iktifa-2.jpg",
+          "/images/projects/iktifa-3.jpg"
+        ]
+      }
 ];
 
 
@@ -284,7 +338,7 @@ const ProjectDetailsPage = () => {
   
             <div className="glass p-8 flex flex-col justify-between rounded-xl border border-[var(--color-content)]/10 shadow-lg lg:col-span-2">
                 <div>
-                    <h3 className="text-2xl font-semibold text-[var(--color-content)] mb-4">Technologies Used</h3>
+                    <h3 className="text-2xl font-semibold text-[var(--color-content)] mb-4">Technologies</h3>
                     <div className="flex flex-wrap gap-2 mb-8">
                         {project.stack.map((tech) => (
                             <span key={tech} className="text-sm bg-[var(--color-interactive)]/10 text-[var(--color-interactive)] px-3 py-1.5 rounded-full font-medium">{tech}</span>
